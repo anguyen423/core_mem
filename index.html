@@ -73,7 +73,12 @@
 
         .slides img {
             width: 100%;
+            height: auto;
+            max-height: 500px; /* or another fixed height you prefer */
+            object-fit: contain; /* Crop to fit the box */
             border-radius: 15px;
+            display: block;
+            margin: 0 auto;
         }
 
         .prev, .next {
@@ -155,6 +160,7 @@
     <div class="content">
  
         <div class="slideshow-container">
+
 <!-- Slide  -->
 <div class="slides">
     <img src="images/20240922-Selena_Andrew_Baby_Shower-Details-00001.jpg" alt="Baby Shower">
@@ -284,7 +290,7 @@
      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
      <a class="next" onclick="changeSlide(1)">&#10095;</a>
 
-        <!-- Dots for navigation -->
+        <!-- Dots for navigation 
         <div class="dot-container">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -336,7 +342,7 @@
             <span class="dot" onclick="currentSlide(48)"></span>
             <span class="dot" onclick="currentSlide(49)"></span>
             <span class="dot" onclick="currentSlide(50)"></span>
-        </div>
+        </div> -->
         <h4> Baby Shower </h4>
 
         <div class="slideshow-container">
@@ -371,9 +377,9 @@
                 <img src="images/20240922-Selena_Andrew_Baby_Shower-Details-00018.jpg" alt="Celebration">
             </div>
 
-            <!-- Navigation arrows -->
+            <!-- Navigation arrows 
             <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>-->
         </div>
 
         <!-- Dots for navigation -->
